@@ -27,7 +27,7 @@ h4{
 }
 
 .book:hover, .join:hover{
-    color: #006cc0;
+    color: blue;
 }
 .msg h2{
     color: #f56300;
