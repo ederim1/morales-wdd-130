@@ -68,6 +68,21 @@ p {
   color: var(--paragraph-color);
   padding: 1em;
 }
+.home-title{
+  font-family:'Rock Salt,Caveat Brush';
+  font-size: 5em;
+}
+.book {
+  font-family:'Rock Salt,Caveat Brush';
+  font-size: 18px;
+}
+.msg {
+  background-color: #6f7364;
+  line-height: 1.5em
+}
+
+
+
 .colors {
   width: 100%;
   min-width: 350px;

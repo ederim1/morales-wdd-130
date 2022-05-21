@@ -1,22 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Rock+Salt&display=swap');
+
 body {max-width: 1600px; margin: 100 auto;
     background-color: aqua;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
+h2 {
+    margin: 0;
+}
+
 header{
     background-color: aquamarine;
 }
 
 nav a {text-align: center;
-    background-color: #f56300;
+    background-color: aquamarine;
     color:#e6e6e6(241, 241, 245);
     text-decoration: none;
+    padding: 15px;
     
 }
 nav a:hover{
      background-color: black;
      color:#006cc0;
+
  }
 .home-title{
     color:#424245;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+
 }
 h4{
     color: #424245;
@@ -24,27 +41,47 @@ h4{
 .book, .join {
     color: #424245;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #d9c2a3;
 }
+.card-img {
+    border: 10px solid #d9c2a3;
+    
+}
+    .rivers-card, .camping-card, .rapids-card   {margin: 200px 0;
+}
+
 
 .book:hover, .join:hover{
     color: #006cc0;
 }
 .msg h2{
     color: #f56300;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    background-color: #39C8C3;
 }
 
 .msg p { 
     color: #006cc0;
+    font-size: .8em;
 }
 
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
-.logo {width:80px}
+.logo {width:80px;
+    padding: 10px;
+}
 
 #hero-msg h1, #hero-msg h2 , h4 {text-align: center;
 
 }
+
 
 .button-box {text-align: center;
 
@@ -53,10 +90,17 @@ h4{
 main section{text-align: center;
 
 }
+main section img{
+    box-sizing: border-box;
+    
+}
 
 #background {    height:725px;
 }
 
+footer { padding: 25px 50px;
+
+}
 footer h3 {
     color:black;
     text-decoration: underline;
@@ -68,5 +112,8 @@ footer a {
 footer a:hoover{
     color:#f56300;
     text-decoration: underline;
-
+}
+footer .social img{
+   padding-top: 15px; 
+   margin-top: 200px;
 }
