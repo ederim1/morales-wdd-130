@@ -41,7 +41,7 @@ h4{
 .book, .join {
     color: #424245;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 18px;zxz;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
@@ -61,7 +61,7 @@ h4{
 .msg h2{
     color: #f56300;
     line-height: 1.5em;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     background-color: #39C8C3;
 }
 
