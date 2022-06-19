@@ -1,26 +1,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Rock+Salt&display=swap');
-
-body {max-width: 1600px; margin: 100 auto;
+/* body */
+body {
+    max-width: 1600px; margin: 100 auto;
     background-color: aqua;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
+    
+}
+body .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
 }
 h2 {
     margin: 0;
 }
-
+/* header */
 header{
-    background-color: aquamarine;
+    background-color:rgba(46, 46, 46, 0.75);
     display: grid;
     grid-template-columns: 150px auto;
+    /* position: absolute;
+    z-index: 220; */
 }
 
-
-nav a {text-align: center;
-    background-color: aquamarine;
+/* nav */
+nav> a:link,
+nav> a:visited {
+    text-align: center;
+    /* background-color:transparent; */
     color:#e6e6e6(241, 241, 245);
     text-decoration: none;
     padding: 15px;
@@ -29,13 +41,75 @@ nav a {text-align: center;
 nav {
     display: flex;
     justify-content: space-around;
+    
 }
 
 nav a:hover{
      background-color: black;
-     color:#006cc0;
+     color:white;
 
  }
+/* hero */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-msg h1 {
+    position: absolute;
+    color:#d9c2a3;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#hero-msg h2 {
+    text-align: center;
+}
+#hero-msg h4{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#hero-box{
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    
+}
+
+#hero-img{
+    width: 100%;
+
+}
+.book, .join {
+    color: #424245;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #d9c2a3;
+}
+/* main */
+main section{text-align: center;
+
+}
+#card-section .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+main section img{
+    box-sizing:border-box;
+}
 .home-title{
     color:#424245;
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
@@ -43,23 +117,18 @@ nav a:hover{
     margin-top: 10px;
 
 }
+/* .home-grid{
+
+} */
 h4{
     color: #424245;
 }
-.book, .join {
-    color: #424245;
-    text-decoration: none;
-    font-size: 18px;zxz;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-    background-color: #d9c2a3;
-}
+
 .card-img {
     border: 10px solid #d9c2a3;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
-    width: 100%;
+    width: 30%;
     
 }
 .card-img:hover {
@@ -140,10 +209,12 @@ rapids-card {
     align-self: center;
 }
 
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
         height: auto;
+        max-width: 2000;
     }
     nav, footer {
         flex-direction: column;
@@ -154,6 +225,7 @@ rapids-card {
     }
     #hero {
         margin-top: 0;
+        
     }
     #hero-msg {
         margin-top: 0;
@@ -183,39 +255,16 @@ rapids-card {
 }
 
 
-
-#hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
-}
-#hero-msg h4{
-    color: white;
-    text-align: center;
-}
-
-/* #hero-msg h1  */
-#hero-msg h2 {text-align: center;}
-
-#hero-box{
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
-}
-
-
-
 .button-box {text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
-main section{text-align: center;
 
-}
-main section img{
-    box-sizing: border-box;
-    
-}
+
 
 #background {    height:725px;
 }
