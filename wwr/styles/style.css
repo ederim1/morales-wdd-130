@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Rock+Salt&display=swap');
 /* body */
 body {
+    display: grid;
     max-width: 1600px; margin: 100 auto;
     background-color: aqua;
     font-family: Raleway, Arial, sans-serif;
@@ -10,12 +11,7 @@ body {
     padding: 0;
     
 }
-body .content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
-}
+
 h2 {
     margin: 0;
 }
@@ -52,7 +48,7 @@ nav a:hover{
 /* hero */
 #hero {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: -100px;
 }
 
@@ -97,19 +93,16 @@ nav a:hover{
     background-color: #d9c2a3;
 }
 /* main */
-main section{text-align: center;
-
-}
-#card-section .content{
+main section {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    
 }
 
-main section img{
+/* main section img{
     box-sizing:border-box;
-}
+} */
 .home-title{
     color:#424245;
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
@@ -117,8 +110,10 @@ main section img{
     margin-top: 10px;
 
 }
-/* .home-grid{
-
+/* .home-grid .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px; 
 } */
 h4{
     color: #424245;
@@ -225,7 +220,6 @@ rapids-card {
     }
     #hero {
         margin-top: 0;
-        
     }
     #hero-msg {
         margin-top: 0;
