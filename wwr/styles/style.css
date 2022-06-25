@@ -23,8 +23,7 @@ header{
     background-color:rgba(46, 46, 46, 0.75);
     display: grid;
     grid-template-columns: 150px auto;
-    /* position: absolute;
-    z-index: 220; */
+    position:relative;
 }
 
 /* nav */
@@ -36,11 +35,11 @@ nav> a:visited {
     text-decoration: none;
     padding: 15px;
     
+    
 }
 nav {
     display: flex;
     justify-content: space-around;
-    
 }
 
 nav a:hover{
@@ -52,12 +51,12 @@ nav a:hover{
 #hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: -75px;
+    margin-top: -100px;
 }
 
 #hero-msg h1 {
     position: absolute;
-    color:#d9c2a3;
+    color:#433f3b;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -84,7 +83,6 @@ nav a:hover{
 
 #hero-img{
     width: 100%;
-
 }
 .book, .join {
     color: #424245;
@@ -100,14 +98,12 @@ main{
     display: grid;
     grid-template-columns: 10, auto;
     grid-template-rows: 10,auto;
-
 }
+
 main section {
     display: flex;
     align-items: center;
     flex-direction: column;
-
-
 }
 
 /* main section img{
@@ -120,11 +116,7 @@ main section {
     margin-top: 10px;
 
 }
-/* .home-grid .content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px; 
-} */
+
 h4{
     color: #424245;
 }
@@ -191,14 +183,14 @@ h4{
     color: #006cc0;
 }
 .msg h2{
-    color: #f56300;
+    color: #a84300;
     line-height: 1.5em;
     padding-bottom: 10px;
-    background-color: #39C8C3;
+    background-color: #6f7364;
 }
 
 .msg p { 
-    color: #006cc0;
+    color: #080854;
     font-size: .8em;
 }
 
@@ -301,3 +293,16 @@ footer .social img{
    padding-top: 15px; 
    margin-top: 200px;
 }
+
+/* Rivers page */
+/* main */
+#rivers-grid{
+    display: grid;
+    grid-template-columns: 10, auto;
+    grid-template-rows: 10,auto;
+
+}
+main section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
