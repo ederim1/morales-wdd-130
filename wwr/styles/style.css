@@ -3,13 +3,16 @@
 /* body */
 body {
     display: grid;
-    max-width: 1600px; margin: 100 auto;
     background-color: aqua;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
-    
+}
+body >*{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
@@ -93,11 +96,18 @@ nav a:hover{
     background-color: #d9c2a3;
 }
 /* main */
-main section {
-    text-align: center;
+main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 10, auto;
+    grid-template-rows: 10,auto;
+
+}
+main section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
 }
 
 /* main section img{
@@ -157,13 +167,15 @@ h4{
     grid-column: 5/7;
     grid-row: 2/3;
 }
-rapids-card {
+.rapids-card {
     grid-column: 8/10;
     grid-row: 2/3;
 }
 #background{
     grid-column: 1/11;
     grid-row: 4/9;
+    background-color: aliceblue;
+
 }
 .mountains{
     grid-column: 2/7;
