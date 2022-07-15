@@ -292,9 +292,12 @@ h3{
   width: 100%;
   border-radius: 5px;
 }
-
-
-
+.msg p {
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 75px;
+  }
 
 
 /* Style the search field */
@@ -307,6 +310,7 @@ form.example input[type=text] {
   width: 30%;
   background: #f1f1f1;
   border-radius: 12px;
+  margin-top: 10px;
 }
 
 
